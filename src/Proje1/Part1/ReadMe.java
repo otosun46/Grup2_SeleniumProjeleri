@@ -19,6 +19,8 @@ public class ReadMe {
         7) Full Name'in, "Automation"ı içinde bulundurduğunu doğrulayın.
 
         8) Email'in, "Testing"ı içinde bulundurduğunu doğrulayın.
+        
+        //deneme 31.08.2020
 
      */
 }
