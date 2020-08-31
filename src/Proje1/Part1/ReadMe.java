@@ -10,6 +10,9 @@ public class ReadMe {
         5) Permanent Address kısmına "Testing Permanent Address" girin.
         6) Submit butonuna tıklayınız.
         7) Full Name'in, "Automation"ı içinde bulundurduğunu doğrulayın.
-        8) Email'in, "Testing"ı içinde bulundurduğunu doğrulayın.
-     */
+        8) Email'in, "Testing"ı içinde bulundurduğunu doğrulayın
+        
+        //deneme 31.08.2020
+
+    */
 }
