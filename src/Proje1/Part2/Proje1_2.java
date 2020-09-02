@@ -34,5 +34,7 @@ public class Proje1_2 extends BaseStaticDriver {
         Assert.assertEquals("https://demo.applitools.com/app.html",curl);
         driver.quit();
 
+        // yaparız umarım
+
     }
 }
