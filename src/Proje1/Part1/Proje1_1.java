@@ -6,7 +6,7 @@ package Proje1.Part1;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utili.BaseStaticDriver;
+import utilities.BaseStaticDriver;
 
 
 public class Proje1_1 extends BaseStaticDriver {
