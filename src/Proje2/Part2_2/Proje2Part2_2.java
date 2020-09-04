@@ -3,6 +3,7 @@
  */
 package Proje2.Part2_2;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -32,10 +33,11 @@ public class Proje2Part2_2 extends BaseStaticDriver {
         Thread.sleep(500);
         driver.findElement(By.id("pay_saved_payees")).click();
         Thread.sleep(500);
-
-
+        String yazi= driver.findElement(By.id("alert_content")).getText();
+        System.out.println(yazi);
+        Assert.assertTrue(yazi.equals("The payment was successfully submitted."));
         Thread.sleep(3000);
-        driver.close();
+        //driver.close();
 
     }
     public static int randomNum(int max) {
