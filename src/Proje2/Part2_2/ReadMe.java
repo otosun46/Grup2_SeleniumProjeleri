@@ -4,21 +4,25 @@ public class ReadMe {
 
     /*
 
-        1) Bu siteye gidin. ->  http://demoqa.com/text-box
+ 1) Bu siteye gidin --> http://zero.webappsecurity.com/login.html
 
-        2) Full Name kısmına "Automation" girin.
+2) Login'e "username" -- Password'a "password" yazın. Sign in button'una tıklayınız.
 
-        3) Email kısmına "Testing" girin.
+3) Paybils button'ına tıklayınız.
 
-        4) Current Address kısmına "Testing Current Address" girin.
+4) Payee dropdown'unundan rastgele (Random) bir değer seçiniz.
 
-        5) Permanent Address kısmına "Testing Permanent Address" girin.
+5) Account dropdown'unundan rastgele (Random) bir değer seçiniz..
 
-        6) Submit butonuna tıklayınız.
+6) Amount'a bir değer girin..
 
-        7) Full Name'in, "Automation"ı içinde bulundurduğunu doğrulayın.
+7) Date'de bir tarih seçiniz.
 
-        8) Email'in, "Testing"ı içinde bulundurduğunu doğrulayın.
+8) Description'ı her hangi bir şekilde doldurun.
+
+11) Pay button'una tıklayınız.
+
+12) The payment was successfully submitted. mesajının göründüğünü doğrulayınız.
 
      */
 }

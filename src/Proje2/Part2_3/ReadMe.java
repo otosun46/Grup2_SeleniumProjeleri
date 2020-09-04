@@ -5,16 +5,23 @@ public class ReadMe {
 
     /*
 
-        1) Bu siteye gidin. -> https://www.snapdeal.com/
+1) Bu siteye gidin --> http://zero.webappsecurity.com/login.html
 
-        2) "teddy bear" aratın ve  Search butonuna tıklayın.
+2) Login'e "username" -- Password'a "password" yazın. Sign in button'una tıklayınız.
 
-        3) Bu yazının göründüğünü doğrulayınız. -> (We've got 918 results for 'teddy bear')
-        Not: Bu yazıdaki sayı değişiklik gösterebilir. Önemli olan cümle kalıbı.
+3) Paybils button'ına tıklayınız.
 
-        4) Snepdeal logosuna tıklayınız.
+4) Purchase Foreign Currency'ya tıklayınız.
 
-        5) URL'in bu olduğunu doğrulayın. (https://www.snapdeal.com/)
+5) Currency kısmından rastgele(RANDOM) bir değer seçiniz. (Dropdown'ın içindeki Select One değerini, Random'a dahil etmeyin.)
+
+6) Amount'a bir değer girin.
+
+7) U.S. dollar (USD)'ı seçiniz.
+
+8) Purchase button'una tıklayınız.
+
+9) Foreign currency cash was successfully purchased. yazısı görünmelidir.
 
      */
 }
