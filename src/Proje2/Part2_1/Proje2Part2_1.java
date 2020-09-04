@@ -3,12 +3,15 @@
  */
 package Proje2.Part2_1;
 
+import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utilities.BaseStaticDriver;
 
 public class Proje2Part2_1 extends BaseStaticDriver {
+
     public static void main(String[] args) throws InterruptedException {
         driver.get("http://zero.webappsecurity.com/login.html");
 
@@ -32,6 +35,10 @@ public class Proje2Part2_1 extends BaseStaticDriver {
         driver.findElement(By.id("btn_submit")).click();
         Thread.sleep(500);
         driver.findElement(By.id("btn_submit")).click();
+        Thread.sleep(500);
+        String yazi= driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
+        System.out.println(yazi);
+        Assert.assertTrue(yazi.equals("You successfully submitted your transaction."));
 
         Thread.sleep(3000);
         driver.close();
