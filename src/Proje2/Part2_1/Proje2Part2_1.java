@@ -34,7 +34,7 @@ public class Proje2Part2_1 extends BaseStaticDriver {
         driver.findElement(By.id("btn_submit")).click();
 
         Thread.sleep(3000);
-        //driver.close();
+        driver.close();
 
     }
     public static int randomNum(int max) {
