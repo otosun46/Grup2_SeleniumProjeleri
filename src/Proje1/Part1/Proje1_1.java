@@ -8,10 +8,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.BaseStaticDriver;
 
+
 public class Proje1_1 extends BaseStaticDriver {
     public static void main(String[] args) throws InterruptedException {
-        //  System.setProperty("webdriver.chrome.driver", "ChromeDriver/chromedriver.exe");
-        // onceki projeden devam ediyorsaniz ust kisma gerek yok
+
 
         driver.get("http://demoqa.com/text-box");
 
