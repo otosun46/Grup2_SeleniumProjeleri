@@ -1,4 +1,4 @@
-package Part2;
+package Proje2.Part2_1;
 
 public class ReadMe {
 
