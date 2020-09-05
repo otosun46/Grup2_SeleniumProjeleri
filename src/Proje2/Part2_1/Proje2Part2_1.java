@@ -42,8 +42,9 @@ public class Proje2Part2_1 extends BaseStaticDriver {
 
         Thread.sleep(3000);
         driver.close();
-
+        //yorum kaldirildi
     }
+
     public static int randomNum(int max) {
         int value = 0;
         value = (int) (Math.random() * max + 1);
