@@ -18,7 +18,7 @@ public class BaseStaticDriver {
         driver = new ChromeDriver();
         Point pozisyon=new Point(480,0);
         driver.manage().window().setPosition(pozisyon);
-        driver.manage().deleteAllCookies();
+       // driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
     }
