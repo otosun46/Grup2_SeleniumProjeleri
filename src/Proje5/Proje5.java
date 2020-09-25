@@ -30,13 +30,10 @@ public class Proje5 extends BaseStaticDriver {
         WebElement loginButton=driver.findElement(By.className("login-button"));
         wait.until(ExpectedConditions.visibilityOf(loginButton));
         loginButton.click();
-        Thread.sleep(1000);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,800)");
-        Thread.sleep(1000);
-        WebElement facebookText=driver.findElement(By.xpath("//li[@class='facebook']"));
+        WebElement facebookText=driver.findElement(By.xpath("//li[@class='facebook']/a"));
         wait.until(ExpectedConditions.visibilityOf(facebookText));
-        Thread.sleep(1000);
         facebookText.click();
 
         Set<String> windowsID = driver.getWindowHandles();
@@ -47,7 +44,24 @@ public class Proje5 extends BaseStaticDriver {
         }
         String urlFacebook=driver.getCurrentUrl();
         Assert.assertTrue(urlFacebook.contains(facebookLink));
-        Thread.sleep(3000);
         driver.close();
+        driver.switchTo().window(mainPage);
+        WebElement contactUs=driver.findElement(By.xpath("//a[text()='Contact us']"));
+        contactUs.click();
+        WebElement name=driver.findElement(By.cssSelector("#FullName"));
+        name.clear();
+        name.sendKeys("Hasan");
+        WebElement mailContact=driver.findElement(By.cssSelector("#Email"));
+        mailContact.clear();
+        mailContact.sendKeys("asds123@gmail.com");
+        WebElement enquiry=driver.findElement(By.cssSelector(".enquiry"));
+        enquiry.sendKeys("2. Grup mesajini birakti");
+        WebElement submitButton=driver.findElement(By.cssSelector(".contact-us-button"));
+        submitButton.click();
+        WebElement result=driver.findElement(By.cssSelector(".result"));
+        System.out.println(result.getText());
+        Assert.assertTrue(result.getText().contains("successfully"));
+        Thread.sleep(3000);
+        driver.quit();
     }
 }
