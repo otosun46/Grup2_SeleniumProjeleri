@@ -18,10 +18,7 @@ public class Proje4 extends BaseStaticDriver {
         driver.get("https://www.e-shopland.ch/sellacious/index.php");
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebDriverWait wait = new WebDriverWait(driver, 5);
-
         String mainPage = driver.getWindowHandle();
-
-
         driver.findElement(By.xpath("//*[@id=\"sella125\"]/div[1]/i[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"finder125\"]")).sendKeys("Canon");
         driver.findElement(By.xpath("//*[@id=\"finder-search\"]/div/div[1]/button")).click();
