@@ -25,6 +25,7 @@ public class MetodWebDriver_nonLogin {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+        driver.get("http://demowebshop.tricentis.com/");
 
     }
     @AfterClass
