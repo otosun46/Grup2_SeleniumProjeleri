@@ -15,10 +15,10 @@ import java.util.List;
 
 public class POM_Part2 extends MetodWebDriver_nonLogin {
     @Test
-    @Parameters({"email","password"})
-    public void ProcedToCheckout(String email,String password) throws InterruptedException {
+    @Parameters({"email", "password"})
+    public void ProcedToCheckout(String email, String password) throws InterruptedException {
         driver.get("http://demowebshop.tricentis.com/");
-        POM_Elements pomElements=new POM_Elements(driver);
+        POM_Elements pomElements = new POM_Elements(driver);
         WebDriverWait wait = new WebDriverWait(driver, 5);
         pomElements.login.click();
         pomElements.email.sendKeys(email);
@@ -33,24 +33,24 @@ public class POM_Part2 extends MetodWebDriver_nonLogin {
         wait.until(ExpectedConditions.elementToBeClickable(pomElements.wishListAdd2)).click();
         wait.until(ExpectedConditions.elementToBeClickable(pomElements.wishListPage)).click();
 
-        ArrayList<String> urunIsimleri=new ArrayList<>();
+        ArrayList<String> urunIsimleri = new ArrayList<>();
         urunIsimleri.add("50's Rockabilly Polka Dot Top JR Plus Size");
         urunIsimleri.add("Blue and green Sneaker");
 
 
-        for (String urun:urunIsimleri) {
-            ListContainsString(pomElements.itemsList,urun);
+        for (String urun : urunIsimleri) {
+            ListContainsString(pomElements.itemsList, urun);
         }
     }
 
     public static void ListContainsString(List<WebElement> webElmList, String expectedString) {
-        boolean bulundu=false;
+        boolean bulundu = false;
         for (WebElement e : webElmList) {
-            if (e.getText().contains(expectedString)){
-                bulundu=true;
+            if (e.getText().contains(expectedString)) {
+                bulundu = true;
                 break;
             }
         }
-        Assert.assertTrue(bulundu,"aranan eleman bulunamadi");
+        Assert.assertTrue(bulundu, "Aranan eleman bulunamadi");
     }
 }

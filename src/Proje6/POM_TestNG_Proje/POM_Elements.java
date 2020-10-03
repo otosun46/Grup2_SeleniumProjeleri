@@ -2,10 +2,7 @@
  * @Author:Otosun Tarih :29/09/2020
  */
 package Proje6.POM_TestNG_Proje;
-// //div[@class='column information']//ul//li[6]//a --> contact us
-// //textarea[@id='Enquiry'] --> not yazma
-////input[@name='send-email'] --> submit tıklama
-// //div[@class='result'] --> mesajı kontrol
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -16,18 +13,19 @@ import java.util.List;
 
 public class POM_Elements {
     public POM_Elements(WebDriver driver) {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
-    @FindBy(css=".ico-login")
-        public WebElement login;
 
-    @FindBy(id="Email")
+    @FindBy(css = ".ico-login")
+    public WebElement login;
+
+    @FindBy(id = "Email")
     public WebElement email;
 
-    @FindBy(id="Password")
+    @FindBy(id = "Password")
     public WebElement password;
 
-    @FindBy(className="login-button")
+    @FindBy(className = "login-button")
     public WebElement loginButton;
 
     @FindBy(xpath = "//div[@class='column information']//ul//li[6]//a")
@@ -42,30 +40,27 @@ public class POM_Elements {
     @FindBy(xpath = "//div[@class='result']")
     public WebElement mesajıKontrol;
 
-    @FindBy(xpath="(//a[@href='/apparel-shoes'])[1]")
+    @FindBy(xpath = "(//a[@href='/apparel-shoes'])[1]")
     public WebElement apparel_shoes;
 
-    @FindBy(xpath="(//a[@href='/blue-and-green-sneaker'])[2]")
+    @FindBy(xpath = "(//a[@href='/blue-and-green-sneaker'])[2]")
     public WebElement blue_green_sneaker;
 
-    @FindBy(id="add-to-wishlist-button-28")
+    @FindBy(id = "add-to-wishlist-button-28")
     public WebElement wishListAdd;
 
-    @FindBy(xpath="(//a[@href='/50s-rockabilly-polka-dot-top-jr-plus-size'])[2]")
+    @FindBy(xpath = "(//a[@href='/50s-rockabilly-polka-dot-top-jr-plus-size'])[2]")
     public WebElement rockability_polka;
 
-    @FindBy(id="add-to-wishlist-button-5")
+    @FindBy(id = "add-to-wishlist-button-5")
     public WebElement wishListAdd2;
 
-    @FindBy(xpath="//a[@href='/wishlist']")
+    @FindBy(xpath = "//a[@href='/wishlist']")
     public WebElement wishListPage;
 
-    //
     @FindAll({
             @FindBy(xpath = "//tr[@class='cart-item-row']//following::a[1]")
     })
     public List<WebElement> itemsList;
 
-    @FindBy(xpath = "(//tr[@class='cart-item-row']//td)[4]//a")
-    public WebElement urun;
 }
