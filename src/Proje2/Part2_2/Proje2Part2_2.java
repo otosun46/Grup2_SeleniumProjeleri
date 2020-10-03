@@ -4,12 +4,14 @@
 package Proje2.Part2_2;
 
 import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utilities.BaseStaticDriver;
 
 public class Proje2Part2_2 extends BaseStaticDriver {
+
     public static void main(String[] args) throws InterruptedException {
         driver.get("http://zero.webappsecurity.com/login.html");
 
@@ -37,7 +39,7 @@ public class Proje2Part2_2 extends BaseStaticDriver {
         System.out.println(yazi);
         Assert.assertTrue(yazi.equals("The payment was successfully submitted."));
         Thread.sleep(3000);
-        //driver.close();
+        driver.close();
 
     }
     public static int randomNum(int max) {

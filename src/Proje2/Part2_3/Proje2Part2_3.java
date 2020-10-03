@@ -3,6 +3,7 @@
  */
 package Proje2.Part2_3;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -28,7 +29,10 @@ public class Proje2Part2_3 extends BaseStaticDriver {
         driver.findElement(By.id("pc_amount")).sendKeys("1200");
         driver.findElement(By.id("pc_inDollars_true")).click();
         driver.findElement(By.id("purchase_cash")).click();
-
+        Thread.sleep(500);
+        String yazi= driver.findElement(By.xpath("//div[@id='alert_content']")).getText();
+        System.out.println(yazi);
+        Assert.assertTrue(yazi.equals("Foreign currency cash was successfully purchased."));
 
         Thread.sleep(3000);
         driver.close();

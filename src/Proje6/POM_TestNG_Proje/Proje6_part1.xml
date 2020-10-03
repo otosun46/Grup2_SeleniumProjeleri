@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+    name="C:/Projeler/Java_Intellij/Grup2_SeleniumProjeleri/src/Proje6/POM_template/POM.java">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="email" value="asds123@gmail.com"></parameter>
+        <parameter name="password" value="HasSah123"></parameter>
+        <classes>
+        <class name="Proje6.POM_TestNG_Proje.POM_Part1">
+                <methods>
+                    <include name="ProcedToCheckout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

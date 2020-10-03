@@ -3,7 +3,9 @@
  */
 package Proje1.Part1;
 
+import com.google.common.annotations.VisibleForTesting;
 import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.BaseStaticDriver;
@@ -47,5 +49,6 @@ public class Proje1_1 extends BaseStaticDriver {
         driver.quit();
 
 // sajhsdjkdhkldf
+        //Bende bu yolda varım...
     }
 }
