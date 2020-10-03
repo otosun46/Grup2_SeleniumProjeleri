@@ -7,7 +7,7 @@
         <parameter name="email" value="asds123@gmail.com"></parameter>
         <parameter name="password" value="HasSah123"></parameter>
         <classes>
-        <class name="Proje6.POM_template.POM_Part1">
+        <class name="Proje6.POM_TestNG_Proje.POM_Part1">
                 <methods>
                     <include name="ProcedToCheckout"/>
                 </methods>

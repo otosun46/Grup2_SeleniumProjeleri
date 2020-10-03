@@ -1,7 +1,7 @@
 /**
  * @Author:Otosun Tarih :29/09/2020
  */
-package Proje6.POM_template;
+package Proje6.POM_TestNG_Proje;
 // //div[@class='column information']//ul//li[6]//a --> contact us
 // //textarea[@id='Enquiry'] --> not yazma
 ////input[@name='send-email'] --> submit tıklama

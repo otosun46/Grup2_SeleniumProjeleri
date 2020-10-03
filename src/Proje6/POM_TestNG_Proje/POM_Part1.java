@@ -1,7 +1,7 @@
 /**
  * @Author:Otosun Tarih :29/09/2020
  */
-package Proje6.POM_template;
+package Proje6.POM_TestNG_Proje;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
