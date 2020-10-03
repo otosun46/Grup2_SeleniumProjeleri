@@ -13,6 +13,7 @@ public class POM_Part1 extends MetodWebDriver_nonLogin {
     @Test
     @Parameters({"email","password"})
     public void ProcedToCheckout(String email,String password) throws InterruptedException {
+        driver.get("http://demowebshop.tricentis.com/");
         POM_Elements pomElements=new POM_Elements(driver);
         WebDriverWait wait = new WebDriverWait(driver, 5);
         pomElements.login.click();
@@ -21,7 +22,6 @@ public class POM_Part1 extends MetodWebDriver_nonLogin {
         pomElements.loginButton.click();
         pomElements.contact_us.click();
         pomElements.notYazma.sendKeys("Grup 2 proje calismasina devam ediyor...");
-        Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(pomElements.submitTıklama)).click();
         String sonucMesaji=wait.until(ExpectedConditions.elementToBeClickable(pomElements.mesajıKontrol)).getText();
         System.out.println(sonucMesaji);
