@@ -2,9 +2,10 @@
  * @Author:Otosun Tarih :28/08/2020
  */
 package Proje1.Part2;
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import utilities.BaseStaticDriver;
 
 public class Proje1_2 extends BaseStaticDriver {

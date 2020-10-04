@@ -4,9 +4,9 @@
 package Proje1.Part3;
 
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import utilities.BaseStaticDriver;
 
 public class Proje1_3 extends BaseStaticDriver {

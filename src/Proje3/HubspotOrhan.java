@@ -3,11 +3,11 @@
  */
 package Proje3;
 
-import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import utilities.BaseStaticDriver;
 
 public class HubspotOrhan extends BaseStaticDriver {

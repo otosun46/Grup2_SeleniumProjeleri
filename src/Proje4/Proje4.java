@@ -3,12 +3,13 @@
  */
 package Proje4;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import utilities.BaseStaticDriver;
 
 import java.util.Set;
@@ -66,7 +67,7 @@ public class Proje4 extends BaseStaticDriver {
         WebElement cam2 = driver.findElement(By.xpath("/html/body/div[2]/table[2]/tbody/tr/td[1]"));
         String cam2txt = cam2.getText();
         System.out.println(cam2txt);
-        Assert.assertTrue("Hatali urun ismi", cam2txt.contains(cam1txt));
+        Assert.assertEquals("Hatali urun ismi", cam2txt.contains(cam1txt));
         Thread.sleep(3000);
         driver.quit();
     }
